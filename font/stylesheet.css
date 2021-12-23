@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Black.eot');
+    src: local('Orev Black'), local('Orev-Black'),
+        url('Orev-Black.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Black.woff2') format('woff2'),
+        url('Orev-Black.woff') format('woff'),
+        url('Orev-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Light.eot');
+    src: local('Orev Light'), local('Orev-Light'),
+        url('Orev-Light.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Light.woff2') format('woff2'),
+        url('Orev-Light.woff') format('woff'),
+        url('Orev-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-BoldItalic.eot');
+    src: local('Orev Bold Italic'), local('Orev-BoldItalic'),
+        url('Orev-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-BoldItalic.woff2') format('woff2'),
+        url('Orev-BoldItalic.woff') format('woff'),
+        url('Orev-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-MediumItalic.eot');
+    src: local('Orev Medium Italic'), local('Orev-MediumItalic'),
+        url('Orev-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-MediumItalic.woff2') format('woff2'),
+        url('Orev-MediumItalic.woff') format('woff'),
+        url('Orev-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-ExtraLight.eot');
+    src: local('Orev ExtraLight'), local('Orev-ExtraLight'),
+        url('Orev-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Orev-ExtraLight.woff2') format('woff2'),
+        url('Orev-ExtraLight.woff') format('woff'),
+        url('Orev-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-ExtraBoldItalic.eot');
+    src: local('Orev ExtraBold Italic'), local('Orev-ExtraBoldItalic'),
+        url('Orev-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-ExtraBoldItalic.woff2') format('woff2'),
+        url('Orev-ExtraBoldItalic.woff') format('woff'),
+        url('Orev-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-ExtraBold.eot');
+    src: local('Orev ExtraBold'), local('Orev-ExtraBold'),
+        url('Orev-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Orev-ExtraBold.woff2') format('woff2'),
+        url('Orev-ExtraBold.woff') format('woff'),
+        url('Orev-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Italic.eot');
+    src: local('Orev Italic'), local('Orev-Italic'),
+        url('Orev-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Italic.woff2') format('woff2'),
+        url('Orev-Italic.woff') format('woff'),
+        url('Orev-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-ExtraLightItalic.eot');
+    src: local('Orev ExtraLight Italic'), local('Orev-ExtraLightItalic'),
+        url('Orev-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-ExtraLightItalic.woff2') format('woff2'),
+        url('Orev-ExtraLightItalic.woff') format('woff'),
+        url('Orev-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-LightItalic.eot');
+    src: local('Orev Light Italic'), local('Orev-LightItalic'),
+        url('Orev-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-LightItalic.woff2') format('woff2'),
+        url('Orev-LightItalic.woff') format('woff'),
+        url('Orev-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Bold.eot');
+    src: local('Orev Bold'), local('Orev-Bold'),
+        url('Orev-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Bold.woff2') format('woff2'),
+        url('Orev-Bold.woff') format('woff'),
+        url('Orev-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-BlackItalic.eot');
+    src: local('Orev Black Italic'), local('Orev-BlackItalic'),
+        url('Orev-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-BlackItalic.woff2') format('woff2'),
+        url('Orev-BlackItalic.woff') format('woff'),
+        url('Orev-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-ThinItalic.eot');
+    src: local('Orev Thin Italic'), local('Orev-ThinItalic'),
+        url('Orev-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-ThinItalic.woff2') format('woff2'),
+        url('Orev-ThinItalic.woff') format('woff'),
+        url('Orev-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev SemiLight';
+    src: url('Orev-SemiLight.eot');
+    src: local('Orev SemiLight'), local('Orev-SemiLight'),
+        url('Orev-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('Orev-SemiLight.woff2') format('woff2'),
+        url('Orev-SemiLight.woff') format('woff'),
+        url('Orev-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Regular.eot');
+    src: local('Orev'), local('Orev-Regular'),
+        url('Orev-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Regular.woff2') format('woff2'),
+        url('Orev-Regular.woff') format('woff'),
+        url('Orev-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Medium.eot');
+    src: local('Orev Medium'), local('Orev-Medium'),
+        url('Orev-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Medium.woff2') format('woff2'),
+        url('Orev-Medium.woff') format('woff'),
+        url('Orev-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev';
+    src: url('Orev-Thin.eot');
+    src: local('Orev Thin'), local('Orev-Thin'),
+        url('Orev-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Orev-Thin.woff2') format('woff2'),
+        url('Orev-Thin.woff') format('woff'),
+        url('Orev-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orev SemiLight';
+    src: url('Orev-SemiLightItalic.eot');
+    src: local('Orev SemiLight Italic'), local('Orev-SemiLightItalic'),
+        url('Orev-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Orev-SemiLightItalic.woff2') format('woff2'),
+        url('Orev-SemiLightItalic.woff') format('woff'),
+        url('Orev-SemiLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
