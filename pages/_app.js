@@ -11,12 +11,21 @@ import { getStrapiMedia } from '../lib/media';
 
 export const GlobalContext = createContext({})
 
-export default function MyApp({pageProps, Component}) {
+export default function MyApp({global, pageProps, Component}) {
   return (
-    <GlobalContext.Provider>
+    <GlobalContext.Provider value={global}>
     <Component {...pageProps} />
     </GlobalContext.Provider>
   )   
   
+}
+
+export async function getStaticProps() {
+  const [global] = await Promise.all([
+    fetchAPI("/global"),
+  ]);
+  return {
+    props: { global },
+  };
 }
 

@@ -18,8 +18,6 @@ const Images = ({ image }) => {
       Layout='responsive'
       Loading="lazy"
       className="object-cover imagecss"
-      src={url}
-      alt={alternativeText || ""}
     />
   );
 };

@@ -9,21 +9,25 @@ import Link from 'next/link';
 
 const solutions = [
     {
+    id: 1,
     name: "Accueil",
     href: "/",
     icon: HomeIcon,
     },
     {
+    id: 2,
     name: "Galerie",
     href: "/Galerie",
     icon: CameraIcon,
     },
     {
+    id: 3,
     name: "Tarifs",
     href: "/Tarifs",
     icon: CashIcon,
     },
     {
+    id: 4,
     name: "Contact",
     href: "/Contact",
     icon: MailOpenIcon,
@@ -35,7 +39,6 @@ export default class Header extends React.Component {
     informations: [],
     information: []
   }
-
     componentDidMount() {
         axios.get(`https://charles-cantin-administration.herokuapp.com/informations`)
         .then(res => {
@@ -158,8 +161,8 @@ export default class Header extends React.Component {
                                 aria-hidden="true"
                             />
                             </div>
-                        <Link href={solution.href}>
-                        <div className="ml-4 text-base font-medium text-gray-900">
+                        <Link key={solution.id} href={solution.href}>
+                        <div key={solution.name} className="ml-4 text-base font-medium text-gray-900">
                             {solution.name}
                         </div>    
                         </Link>

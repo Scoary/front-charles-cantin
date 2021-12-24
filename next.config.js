@@ -20,6 +20,8 @@ module.exports = (phase, { defaultConfig }) => {
 }
 module.exports= {
   images: {
-    domains:["https://charles-cantin-administration.herokuapp.com/global"],
+    domains:["https://res.cloudinary.com"],
+    loader: 'cloudinary',
+    path: '<cloudinary-path-here>'
   },
 }

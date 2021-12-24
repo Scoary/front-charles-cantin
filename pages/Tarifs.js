@@ -55,7 +55,7 @@ export default function Tarifs({ tarifs, global }) {
     </nav>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-4">
       {tarifs.map((tarif) => (
-          <div>
+          <div key={tarif.id}>
             <h2 className="text-3xl underline text-[#222725]">
               {tarif.Titre}
             </h2>

@@ -56,7 +56,7 @@ export default function Contact({ global, informations }) {
       <ol role="list" className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4">
         <li className="flex">
           <div className="flex items-center text-[#DFE1B7] hover:text-gray-500">
-            <Link href="/">
+            <Link href="/" passHref >
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="false" />
             </Link>
           </div>
@@ -221,7 +221,7 @@ export default function Contact({ global, informations }) {
                 </dl>
                 <ul role="list" className="mt-6 flex space-x-6">
                   {navigationFacebook.map((item) => (
-                    <li>
+                    <li key={item.name}>
                       <a
                         rel="noreferrer"
                         target="_blank"
@@ -235,7 +235,7 @@ export default function Contact({ global, informations }) {
                     </li>
                   ))}
                   {navigationInstagram.map((item) => (
-                    <li>
+                    <li key={item.name}>
                       <a
                         rel="noreferrer"
                         target="_blank"
@@ -361,8 +361,8 @@ export default function Contact({ global, informations }) {
                         <option value="Pour Deux">Pour Deux</option>
                         <option value="Famille">Famille</option>
                         <option value="Il était une fois">Il était une fois</option>
-                        <option value="Mon bébé">Mon bébé</option>
-                        <option value="J'immortalise l'évènement">J'immortalise l'évènement</option>
+                        <option value="Mon bebe">Mon bébé</option>
+                        <option value="J'immortalise l'evenement">J'immortalise l'évènement</option>
                         <option value="Autre">Autre</option>
                       </select>
                     </div>
