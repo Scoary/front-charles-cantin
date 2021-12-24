@@ -359,9 +359,9 @@ export default function Contact({ global, informations }) {
                         <option value="Juste Moi">Juste Moi</option>
                         <option value="Pour Deux">Pour Deux</option>
                         <option value="Famille">Famille</option>
-                        <option value="Il était une fois">Il était une fois</option>
+                        <option value="Il etait une fois">Il était une fois</option>
                         <option value="Mon bebe">Mon bébé</option>
-                        <option value="J immortalise l evenement">J'immortalise l'évènement</option>
+                        <option value="J immortalise l evenement">J&apos;immortalise l&apos;évènement</option>
                         <option value="Autre">Autre</option>
                       </select>
                     </div>
