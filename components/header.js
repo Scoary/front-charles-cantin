@@ -59,7 +59,7 @@ export default class Header extends React.Component {
         <Popover className="relative z-50 bg-[#47555E]">
             <div className="flex justify-between items-center px-4 py-4 lg:py-0 sm:px-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-                <Link href="/">
+                <Link href="/" passHref>
                 <img className="w-32 lg:w-52" src={Logo.src} alt="Logo" />
                 </Link>
             </div>
@@ -161,7 +161,7 @@ export default class Header extends React.Component {
                                 aria-hidden="true"
                             />
                             </div>
-                        <Link key={solution.id} href={solution.href}>
+                        <Link key={solution.id} href={solution.href} passHref>
                         <div key={solution.name} className="ml-4 text-base font-medium text-gray-900">
                             {solution.name}
                         </div>    

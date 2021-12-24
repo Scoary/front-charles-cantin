@@ -49,7 +49,6 @@ export default function Contact({ global, informations }) {
         <title>{global.siteName}</title>
         <meta name="description" content={global.MetaDescription} />
         <link rel="shortcut icon" href={getStrapiMedia(global.favicon)} />
-        <script src="../script/resetform.js"></script>
       </Head>
       <Header />
       <nav className="flex" aria-label="Breadcrumb">
@@ -362,7 +361,7 @@ export default function Contact({ global, informations }) {
                         <option value="Famille">Famille</option>
                         <option value="Il était une fois">Il était une fois</option>
                         <option value="Mon bebe">Mon bébé</option>
-                        <option value="J'immortalise l'evenement">J'immortalise l'évènement</option>
+                        <option value="J immortalise l evenement">J'immortalise l'évènement</option>
                         <option value="Autre">Autre</option>
                       </select>
                     </div>
@@ -413,7 +412,7 @@ export default function Contact({ global, informations }) {
       </div>
       <Footer/>
       {/* Script pour vanilla pour reset le formulaire à l'envoi */}
-      <Script>
+      <Script id="1">
       {`window.onbeforeunload = () => {
         for (const form of document.getElementsByTagName('form')) {
         form.reset();}}`}

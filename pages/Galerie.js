@@ -29,7 +29,7 @@ const Galerie = ({galeries, global, categories}) => {
       <ol role="list" className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4">
         <li className="flex">
           <div className="flex items-center text-[#DFE1B7] hover:text-gray-500">
-            <Link href="/">
+            <Link href="/" passHref>
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="false" />
             </Link>
           </div>
