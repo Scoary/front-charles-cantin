@@ -5,6 +5,7 @@ import { fetchAPI } from "../lib/api";
 import Images from "../components/image";
 import { HomeIcon } from "@heroicons/react/solid";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const pages = [{ name: "Tarifs", href: "/Tarifs", current: true }];
 
@@ -18,16 +19,12 @@ export default function Tarifs({ tarifs, global }) {
       </Head>
       <Header />
       <nav className="flex" aria-label="Breadcrumb">
-      <ol
-        role="list"
-        className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4"
-      >
+      <ol role="list" className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4">
         <li className="flex">
-          <div className="flex items-center">
-            <a href="/" className="text-[#DFE1B7] hover:text-gray-500">
+          <div className="flex items-center text-[#DFE1B7] hover:text-gray-500">
+            <Link href="/">
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="false" />
-              <span className="sr-only">Accueil</span>
-            </a>
+            </Link>
           </div>
         </li>
         {pages.map((page) => (
@@ -43,18 +40,19 @@ export default function Tarifs({ tarifs, global }) {
               >
                 <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
               </svg>
-              <a
+              <div className="ml-4 text-xl font-medium text-[#DFE1B7]">
+              <Link
                 href={page.href}
-                className="ml-4 text-xl font-medium text-[#DFE1B7]"
-                aria-current={page.current ? "page" : undefined}
+                aria-current={page.current ? 'page' : undefined}
               >
                 {page.name}
-              </a>
+              </Link>
+              </div>
             </div>
           </li>
         ))}
       </ol>
-      </nav>
+    </nav>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-4">
       {tarifs.map((tarif) => (
           <div>

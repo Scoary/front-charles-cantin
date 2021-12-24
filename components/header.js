@@ -5,6 +5,7 @@ import Logo from "../assets/img/Logo.jpg";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon,XIcon } from "@heroicons/react/outline";
+import Link from 'next/link';
 
 const solutions = [
     {
@@ -55,10 +56,9 @@ export default class Header extends React.Component {
         <Popover className="relative z-50 bg-[#47555E]">
             <div className="flex justify-between items-center px-4 py-4 lg:py-0 sm:px-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/">
-                <span className="sr-only">Charles Cantin - Photographe</span>
+                <Link href="/">
                 <img className="w-32 lg:w-52" src={Logo.src} alt="Logo" />
-                </a>
+                </Link>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#47555E]">
@@ -70,40 +70,28 @@ export default class Header extends React.Component {
                 <Popover className="relative">
                 {({ open }) => (
                     <>
-                    <a
-                        href="/"
-                        className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]"
-                    >
-                        Accueil
-                    </a>
+                    <div className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]">
+                        <Link href="/">Accueil</Link>
+                    </div>
                     </>
                 )}
                 </Popover>
 
-                <a
-                href="/Galerie"
-                className="text-xl lg:text-2xl font-medium  text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]"
-                >
-                Galerie
-                </a>
-                <a
-                href="/Tarifs"
-                className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]"
-                >
-                Tarifs
-                </a>
-                <a
-                href="/Contact"
-                className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]"
-                >
-                Contact
-                </a>
+                <div className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]">
+                    <Link href="/Galerie">Galerie</Link>
+                </div>
+                <div className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]">
+                    <Link href="/Tarifs">Tarifs</Link>
+                </div>
+                <div className="text-xl lg:text-2xl font-medium text-[#DFE1B7] hover:text-[#222725] hover:border-b-2 hover:border-[#DFE1B7]">
+                    <Link href="/Contact">Contact</Link>
+                    </div>
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 z-50">
-            <a href={this.state.informations.Facebook} target="_blank" className="hover:drop-shadow-2xl px-4 py-2 flex items-center text-base rounded-full text-[#DFE1B7]  bg-[#222725] ">
+            <a rel="noreferrer" href={this.state.informations.Facebook} target="_blank" className="hover:drop-shadow-2xl px-4 py-2 flex items-center text-base rounded-full text-[#DFE1B7]  bg-[#222725] ">
             Facebook
             </a>
-            <a href={this.state.informations.Instagram} target="_blank" className="hover:drop-shadow-2xl ml-4 px-4 py-2 flex items-center text-base rounded-full text-[#DFE1B7]  bg-[#222725] ">
+            <a rel="noreferrer" href={this.state.informations.Instagram} target="_blank" className="hover:drop-shadow-2xl ml-4 px-4 py-2 flex items-center text-base rounded-full text-[#DFE1B7]  bg-[#222725] ">
             Instagram
             </a>
             </div>
@@ -144,6 +132,7 @@ export default class Header extends React.Component {
                     </div>
                     <div className="flex justify-center pb-6">
                         <a
+                        rel="noreferrer"
                         target="_blank"
                         href={this.state.informations.Facebook}
                         className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm lg:text-base font-medium text-[#DFE1B7] bg-[#222725]"
@@ -151,6 +140,7 @@ export default class Header extends React.Component {
                         Facebook
                         </a>
                         <a
+                        rel="noreferrer"
                         target="_blank"
                         href={this.state.informations.Instagram}
                         className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm lg:text-base font-medium text-[#DFE1B7] bg-[#222725]"
@@ -160,21 +150,21 @@ export default class Header extends React.Component {
                     </div>
                     <nav className="grid grid-cols-1 gap-7">
                         {solutions.map((solution) => (
-                        <a
-                            key={solution.name}
-                            href={solution.href}
-                            className="-m-3 p-3 flex items-center rounded-lg text-[#222725] hover:bg-gray-50"
-                        >
+                        <>
+                        <div className="-m-3 p-3 flex items-center rounded-lg text-[#222725] hover:bg-gray-50">
                             <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-[#222725] text-white">
                             <solution.icon
                                 className="h-6 w-6"
                                 aria-hidden="true"
                             />
                             </div>
-                            <div className="ml-4 text-base font-medium text-gray-900">
+                        <Link href={solution.href}>
+                        <div className="ml-4 text-base font-medium text-gray-900">
                             {solution.name}
-                            </div>
-                        </a>
+                        </div>    
+                        </Link>
+                        </div>
+                        </>
                         ))}
                     </nav>
                     </div>
@@ -187,4 +177,3 @@ export default class Header extends React.Component {
         )
     }
 }
- 

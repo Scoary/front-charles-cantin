@@ -6,6 +6,7 @@ import { fetchAPI } from "../lib/api";
 import Images from '../components/image';
 import { useState } from 'react';
 import Footer from '../components/footer'
+import Link from 'next/link';
 
 const pages = [
     { name: 'Galerie', href: '/Galerie', current: true },
@@ -27,11 +28,10 @@ const Galerie = ({galeries, global, categories}) => {
       <nav className="flex" aria-label="Breadcrumb">
       <ol role="list" className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4">
         <li className="flex">
-          <div className="flex items-center">
-            <a href="/" className="text-[#DFE1B7] hover:text-gray-500">
+          <div className="flex items-center text-[#DFE1B7] hover:text-gray-500">
+            <Link href="/">
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="false" />
-              <span className="sr-only">Accueil</span>
-            </a>
+            </Link>
           </div>
         </li>
         {pages.map((page) => (
@@ -47,13 +47,14 @@ const Galerie = ({galeries, global, categories}) => {
               >
                 <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
               </svg>
-              <a
+              <div className="ml-4 text-xl font-medium text-[#DFE1B7]">
+              <Link
                 href={page.href}
-                className="ml-4 text-xl font-medium text-[#DFE1B7]"
                 aria-current={page.current ? 'page' : undefined}
               >
                 {page.name}
-              </a>
+              </Link>
+              </div>
             </div>
           </li>
         ))}

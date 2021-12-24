@@ -6,6 +6,7 @@ import { HomeIcon } from "@heroicons/react/solid";
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import Footer from "../components/footer";
 import Script from 'next/script'
+import Link from "next/link";
 
 const pages = [{ name: "Contact", href: "/Contact", current: true }];
 
@@ -52,16 +53,12 @@ export default function Contact({ global, informations }) {
       </Head>
       <Header />
       <nav className="flex" aria-label="Breadcrumb">
-      <ol
-        role="list"
-        className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4"
-      >
+      <ol role="list" className="bg-[#222725] justify-center w-screen shadow px-6 flex space-x-4">
         <li className="flex">
-          <div className="flex items-center">
-            <a href="/" className="text-[#DFE1B7] hover:text-gray-500">
+          <div className="flex items-center text-[#DFE1B7] hover:text-gray-500">
+            <Link href="/">
               <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="false" />
-              <span className="sr-only">Accueil</span>
-            </a>
+            </Link>
           </div>
         </li>
         {pages.map((page) => (
@@ -77,18 +74,19 @@ export default function Contact({ global, informations }) {
               >
                 <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
               </svg>
-              <a
+              <div className="ml-4 text-xl font-medium text-[#DFE1B7]">
+              <Link
                 href={page.href}
-                className="ml-4 text-xl font-medium text-[#DFE1B7]"
-                aria-current={page.current ? "page" : undefined}
+                aria-current={page.current ? 'page' : undefined}
               >
                 {page.name}
-              </a>
+              </Link>
+              </div>
             </div>
           </li>
         ))}
       </ol>
-      </nav>
+    </nav>
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-2 lg:px-3">
           <div className="relative bg-white shadow-xl">
@@ -225,6 +223,7 @@ export default function Contact({ global, informations }) {
                   {navigationFacebook.map((item) => (
                     <li>
                       <a
+                        rel="noreferrer"
                         target="_blank"
                         key={item.name}
                         href={informations.Facebook}
@@ -238,6 +237,7 @@ export default function Contact({ global, informations }) {
                   {navigationInstagram.map((item) => (
                     <li>
                       <a
+                        rel="noreferrer"
                         target="_blank"
                         key={item.name}
                         href={informations.Instagram}

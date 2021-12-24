@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Orev";
+    src: url("../font/Orev-Regular.woff2") format("woff2"),
+           url("../font/Orev-Bold.woff") format("woff");
+   }
+
+@font-face {
+    font-family: "Signatura";
+    src: url("../font/Signatura\ Monoline.ttf"),
+           url("../font/Signatura\ Monoline.ttf");
+   }
+
+header, footer {
+    font-family: 'Orev';
+}
+h1{
+    font-family: 'Signatura';
+}
+.range-value{
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;  
+    background: #222725;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.range-value::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #DFE1B7;
+    cursor: pointer;
+}
+  
+.range-value::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #DFE1B7;
+    cursor: pointer;
+}
+.cancel {
+    margin: 20px auto 30px;
+    width: 100%;
+}
+.button-cancel {
+    border: 1px #222725 solid;
+    text-align: center;
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button-cancel:hover {
+      background: #DFE1B7;
+      border: none;
+}
