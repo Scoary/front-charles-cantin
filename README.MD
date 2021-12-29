@@ -1,4 +1,4 @@
-# [Evaluation en cours de formation STUDI] Projet de site vitrine pour Charles CANTIN - photographe.
+# [Evaluation en cours de formation STUDI] Projet d'application web pour Charles CANTIN - photographe.
 
 ## 1. Contexte de l'évaluation
 Charles Cantin est passionné par la photographie.
